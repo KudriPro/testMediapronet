@@ -797,7 +797,8 @@ input[type="number"] {
   .request__input:checked + .request__checkbox-indicator::before, .request__input:checked + .request__checkbox-indicator::after {
     background: black; }
   .request__btn {
-    width: 184px; }
+    width: 184px;
+    margin-bottom: 74px; }
   .request__title {
     padding-top: 32px;
     margin-top: 0; } }
