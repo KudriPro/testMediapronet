@@ -1,0 +1,135 @@
+.request {
+  background-color: $bg-light;
+}
+.request__container {
+  height: 100%;
+  background: $bg-opasity;
+}
+.request__title {
+  margin-top: 0px;
+  padding-top: 16px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.request__description {
+  margin: 0;
+  max-width: 358px;
+  margin-bottom: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.request__input {
+  display: block;
+  width: 374px;
+  padding: 11px 26px 11px 16px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  font: inherit;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    font-weight: normal;
+  }
+}
+.request__label-sign {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  padding-bottom: 25px;
+  font-size: 12px;
+  line-height: 1.3;
+  color: $light-color-text;
+}
+.request__btn {
+  padding: 15px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+}
+.request__checkbox-indicator {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  border-radius: 2px;
+  background-color: $bg-btn;
+}
+.request__input:checked + .request__checkbox-indicator {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 6px;
+    left: 7px;
+    top: 8px;
+    background: #ffffff;
+    border-radius: 1px;
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 10px;
+    left: 12px;
+    top: 5px;
+    background: #ffffff;
+    border-radius: 1px;
+    transform: rotate(45deg);
+  }
+}
+@media (min-width: $tablet-width) {
+  .request {
+    padding-top: 0;
+  }
+  .request__title {
+    padding-top: 32px;
+  }
+  .request__description {
+    max-width: 600px;
+    margin-bottom: 32px;
+  }
+  .request__label-sign {
+    max-width: 500px;
+  }
+  .request__input {
+    width: 600px;
+  }
+  .request__btn {
+    width: 184px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .request {
+    padding-top: 0;
+    max-width: 640px;
+  }
+  .request__input {
+    max-width: 560px;
+  }
+  .request__checkbox-indicator {
+    border: 1px solid #dedede;
+    background-color: transparent;
+  }
+  .request__input:checked + .request__checkbox-indicator {
+    &::before,
+    &::after {
+      background: black;
+    }
+  }
+  .request__btn {
+    width: 184px;
+  }
+  .request__title {
+    padding-top: 32px;
+    margin-top: 0;
+  }
+}

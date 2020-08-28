@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Тестовое заадание</title>
+    <link rel="stylesheet" href="build/css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="format-detection" content="telephone=no" />
+  </head>
+
+  <body>
+    <p class="test test-hidden">Тестовое задание</p>
+    <div class="desktop-column">
+      <section class="realty container">
+        <h2 class="visually-hidden">Недвижимость</h2>
+        <p class="realty__test realty__test--hidden">Тестовое задание</p>
+        <div class="realty__slider">
+          <ul class="realty__list">
+            <li class="realty__list-item realty__list-item--active">
+              <div class="realty__picture">
+                <img
+                  src="build/img/photo.jpg"
+                  alt="Фото квартиры"
+                  height="200"
+                />
+                <p class="realty__picture-text">Текст</p>
+                <span></span>
+              </div>
+              <div class="realty__item-description">
+                <h3 class="realty__title">Название1</h3>
+                <div class="realty__description">
+                  <b class="realty__name">Название</b>
+                  <p class="realty__text">Текст</p>
+                </div>
+                <p class="realty__specif">
+                  1-комн.
+                  <span class="realty__footage">40 м2</span> ..................
+                  1 560 600 руб.
+                </p>
+                <a class="realty__link" href="#"> 150 предложений </a>
+              </div>
+            </li>
+            <li class="realty__list-item">
+              <div class="realty__picture">
+                <img src="build/img/photo.jpg" alt="Фото квартиры" />
+                <p class="realty__picture-text">Другой текст</p>
+                <span></span>
+              </div>
+              <div class="realty__item-description">
+                <h3 class="realty__title">Название2</h3>
+                <div class="realty__description">
+                  <b class="realty__name">Название</b>
+                  <p class="realty__text">Текст</p>
+                </div>
+                <p class="realty__specif">
+                  1-комн.
+                  <span class="realty__footage">40 м2</span> ..................
+                  1 560 600 руб.
+                </p>
+                <a class="realty__link" href="#"> 150 предложений </a>
+              </div>
+            </li>
+            <li class="realty__list-item">
+              <div class="realty__picture">
+                <img src="build/img/photo.jpg" alt="Фото квартиры" />
+                <p class="realty__picture-text">Еще один текст</p>
+                <span></span>
+              </div>
+              <div class="realty__item-description">
+                <h3 class="realty__title">Название3</h3>
+                <div class="realty__description">
+                  <b class="realty__name">Название</b>
+                  <p class="realty__text">Текст</p>
+                </div>
+                <p class="realty__specif">
+                  1-комн.
+                  <span class="realty__footage">40 м2</span> ..................
+                  1 560 600 руб.
+                </p>
+                <a class="realty__link" href="#"> 150 предложений </a>
+              </div>
+            </li>
+          </ul>
+          <div class="realty__slide-btn">
+            <button
+              class="realty__picture-toggle realty__picture-toggle--prev"
+              type="button"
+            >
+              &lt;
+            </button>
+            <button
+              class="realty__picture-toggle realty__picture-toggle--next"
+              type="button"
+            >
+              &gt;
+            </button>
+          </div>
+        </div>
+        <button class="realty__btn btn realty__btn--desk" type="button">
+          Смотреть все
+        </button>
+      </section>
+      <section class="request">
+        <div class="request__container container">
+          <h2 class="request__title">Заголовок</h2>
+          <p class="request__description">
+            Текст генерируется абзацами случайным образом от двух до десяти
+            предложений в абзаце.
+          </p>
+          <form class="request__form" action="#" method="POST">
+            <input
+              class="request__input"
+              type="text"
+              placeholder="Ваше имя"
+              id="name"
+              name="name"
+            />
+            <input
+              class="request__input"
+              type="number"
+              placeholder="Номер телефона"
+              id="phone"
+              name="phone"
+            />
+            <button class="request__btn btn" type="submit">
+              Отправить заявку
+            </button>
+            <label class="request__label-sign">
+              <input
+                class="request__input visually-hidden"
+                type="checkbox"
+                id="checkbox-agree"
+                name="checkbox-agree"
+                checked
+              />
+              <span class="request__checkbox-indicator"></span>
+              Текст генерируется абзацами случайным образом от двух до десяти
+              предложений в абзаце, что позволяет сделать текст более
+              привлекательным.
+            </label>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="build/js/main.js"></script>
+  </body>
+</html>
